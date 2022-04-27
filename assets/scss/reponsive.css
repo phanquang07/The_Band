@@ -6,6 +6,10 @@
   #about-band .about-member .member-info:not(:last-child) {
     margin-bottom: 3.2rem;
   }
+  .tour-btn-sub {
+    font-size: 1.8rem;
+    height: 4.8rem;
+  }
   #tour .tour-item .buy-ticket .ticket-item:not(last-child) {
     margin-bottom: 2rem;
   }

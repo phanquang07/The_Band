@@ -24,7 +24,7 @@ modalContents.addEventListener('click', function (e) {
 const navList = document.querySelector('.nav-list')
 const navMobileBtn = document.querySelector('.nav-mobile-btn')
 const iconBars = document.querySelector('.fa-bars')
-const headerModal = document.querySelector('.header-modal')
+// const headerModal = document.querySelector('.header-modal')
 
 navMobileBtn.onclick = function () {
   "use strict"
@@ -33,11 +33,11 @@ navMobileBtn.onclick = function () {
   headerModal.classList.toggle('active')
 }
 
-function closeNavbar() {
-  navList.classList.remove('active')
-  iconBars.classList.toggle('fa-xmark')
-}
-headerModal.addEventListener('click', closeNavbar)
+// function closeNavbar() {
+//   navList.classList.remove('active')
+//   iconBars.classList.toggle('fa-xmark')
+// }
+// headerModal.addEventListener('click', closeNavbar)
 
 // Tự động đóng navbar khi chọn menu
 const menuItems = document.querySelectorAll('.nav-link')

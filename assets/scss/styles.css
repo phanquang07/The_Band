@@ -333,6 +333,7 @@
 #contact .contact-content .contact-form .btn-contact {
   float: right;
   margin: 1.6rem 0;
+  clear: both;
 }
 
 #map .map-img {
