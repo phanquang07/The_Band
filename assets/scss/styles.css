@@ -1,0 +1,533 @@
+#header {
+  background: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#header .header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4.6rem;
+}
+
+#header .header-inner #navbar .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #000000;
+}
+
+#header .header-inner #navbar .nav-list .nav-item:hover .nav-link {
+  color: #000000;
+  background: #CCC;
+}
+
+#header .header-inner #navbar .nav-list .nav-item:hover .more-nav-link {
+  color: #000000;
+  background: #CCC;
+}
+
+#header .header-inner #navbar .nav-list .nav-item .nav-link,
+#header .header-inner #navbar .nav-list .nav-item .more-nav-link {
+  color: #ffffff;
+  line-height: 4.6rem;
+  padding: 0 2.4rem;
+  text-transform: uppercase;
+}
+
+#header .header-inner #navbar .nav-list .more-nav-item {
+  position: relative;
+}
+
+#header .header-inner #navbar .nav-list .more-nav-item:hover .subnav-list {
+  display: block;
+}
+
+#header .header-inner #navbar .nav-list .more-nav-item .subnav-list {
+  display: none;
+  position: absolute;
+  top: 4.6rem;
+  left: 0;
+  z-index: 1;
+  min-width: 16rem;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0.4rem 1rem 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.4rem 1rem 0 rgba(0, 0, 0, 0.3);
+}
+
+#header .header-inner #navbar .nav-list .more-nav-item .subnav-list .subnav-link {
+  color: #000000;
+  line-height: 3.85rem;
+  padding: 0 1.6rem;
+  background: #ffffff;
+}
+
+#header .header-inner #navbar .nav-list .more-nav-item .subnav-list .subnav-link:hover {
+  background: #CCC;
+}
+
+#header .header-inner #navbar .nav-mobile-btn {
+  display: none;
+  color: #ffffff;
+  line-height: 6.4rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+#header .header-inner #navbar .nav-mobile-btn:hover {
+  cursor: pointer;
+}
+
+#header .header-inner .search .search-icons {
+  color: #ffffff;
+  font-size: 1.4rem;
+  line-height: 4.6rem;
+  padding: 0 2.4rem;
+}
+
+#header .header-inner .search .search-icons:hover {
+  background: #F2453D;
+}
+
+#slider {
+  margin-top: 4.6rem;
+}
+
+#slider .slider-inner .slide {
+  position: relative;
+}
+
+#slider .slider-inner .slide .slider-img {
+  width: 100%;
+}
+
+#slider .slider-inner .slide .slider-text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 11;
+  color: #fff;
+  text-align: center;
+  padding: 3.2rem 1.6rem;
+}
+
+#slider .slider-inner .slide .slider-text .slider-heading {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+}
+
+#slider .slider-inner .slide .slider-text .slider-body {
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.about-heading {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 1rem !important;
+}
+
+.about-note {
+  font-style: italic;
+  color: #A0A0A0;
+  text-align: center;
+  margin: 1.5rem 0 !important;
+}
+
+.about-band-item {
+  padding: 6.4rem 1.6rem;
+}
+
+#about-band {
+  background: #ffffff;
+}
+
+#about-band .about-content {
+  text-align: justify;
+  margin-top: 1.5rem !important;
+}
+
+#about-band .about-member {
+  padding-top: 4.7rem;
+  padding-bottom: 3.2rem;
+}
+
+#about-band .about-member .member-info .member-name {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+#about-band .about-member .member-info .member-img-wrap {
+  margin-top: 1.5rem;
+}
+
+#about-band .about-member .member-info .member-img-wrap .member-img {
+  width: 100%;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.tour-btn-sub {
+  color: #ffffff;
+  background: #000000;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.tour-btn-sub:hover {
+  background: #CCC;
+}
+
+#tour .tour-item {
+  background: #000000;
+}
+
+#tour .tour-item .tour-heading {
+  color: #ffffff;
+}
+
+#tour .tour-item .booking-schedule {
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+#tour .tour-item .booking-schedule .booking-schedule-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  border-top: 0.1rem solid #CCC;
+  padding: 0.8rem 1.6rem;
+}
+
+#tour .tour-item .booking-schedule .booking-schedule-inner .booking-date {
+  color: #A0A0A0;
+}
+
+#tour .tour-item .booking-schedule .booking-schedule-inner .ticket-status {
+  color: #ffffff;
+  background: #F2453D;
+  margin-left: 1.6rem;
+  padding: 0 0.8rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+#tour .tour-item .booking-schedule .booking-schedule-inner:last-child {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#tour .tour-item .booking-schedule .booking-schedule-inner:last-child .ticket-status {
+  border-radius: 50%;
+  background: #000000;
+  margin-right: 1.6rem;
+}
+
+#tour .tour-item .buy-ticket {
+  padding-top: 3.2rem;
+  padding-bottom: 4.8rem;
+}
+
+#tour .tour-item .buy-ticket .ticket-item-inner {
+  border-radius: 0.4rem;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+#tour .tour-item .buy-ticket .ticket-item-inner .ticket-above {
+  background: #000000;
+}
+
+#tour .tour-item .buy-ticket .ticket-item-inner .ticket-above .ticket-thumbnail {
+  width: 100%;
+}
+
+#tour .tour-item .buy-ticket .ticket-item-inner .ticket-above .ticket-thumbnail:hover {
+  opacity: 0.6;
+}
+
+#tour .tour-item .buy-ticket .ticket-item-inner .ticket-below {
+  padding: 1.6rem;
+}
+
+#tour .tour-item .buy-ticket .ticket-item-inner .ticket-below .ticket-heading {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#tour .tour-item .buy-ticket .ticket-item-inner .ticket-below .ticket-booking {
+  margin: 1.5rem 0;
+  color: #A0A0A0;
+}
+
+#tour .tour-item .buy-ticket .ticket-item-inner .ticket-below .ticket-description {
+  margin-bottom: 1.5rem;
+}
+
+.contact-icons {
+  margin-right: 1.8rem;
+}
+
+.contact-item {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.contact-item .contact-icons {
+  color: #666666;
+}
+
+.contact-item .contact-link {
+  text-decoration: none;
+}
+
+.contact-item .contact-link:hover {
+  text-decoration: underline;
+}
+
+.contact-input {
+  padding: 0.8rem;
+  border: 0.1rem solid #CCC;
+  width: 100%;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+#contact {
+  background: #ffffff;
+}
+
+#contact .contact-content {
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+}
+
+#contact .contact-content .contact-form .contact-form-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+#contact .contact-content .contact-form .btn-contact {
+  float: right;
+  margin: 1.6rem 0;
+}
+
+#map .map-img {
+  width: 100%;
+}
+
+.modal-container {
+  width: 50rem;
+  max-width: calc(100% - 3.2rem);
+  margin: 0 auto;
+}
+
+.modal-tickets.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@-webkit-keyframes modalFadeIn {
+  from {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes modalFadeIn {
+  from {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.modal-tickets {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modal-tickets .modal-contents {
+  position: relative;
+  background: #ffffff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  -webkit-animation: modalFadeIn linear 0.3s;
+          animation: modalFadeIn linear 0.3s;
+}
+
+.modal-tickets .modal-contents .modal-btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background: #159688;
+  padding: 1.2rem 1.8rem;
+  color: #ffffff;
+}
+
+.modal-tickets .modal-contents .modal-btn-close:hover {
+  background: #CCC;
+}
+
+.modal-tickets .modal-contents .modal-head {
+  padding: 4.8rem 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  background: #159688;
+}
+
+.modal-tickets .modal-contents .modal-head .bag-icons {
+  font-size: 3rem;
+}
+
+.modal-tickets .modal-contents .modal-head .modal-heading {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  margin-left: 2rem;
+}
+
+.modal-tickets .modal-contents .modal-main {
+  padding: 1.6rem;
+}
+
+.modal-tickets .modal-contents .modal-main .modal-label {
+  margin-bottom: 1rem;
+}
+
+.modal-tickets .modal-contents .modal-main .modal-input {
+  margin-bottom: 2rem;
+  width: 100%;
+  padding: 0.8rem;
+  border: 0.1rem solid #CCC;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.modal-tickets .modal-contents .modal-main .modal-buy-tickets {
+  width: 100%;
+  padding: 1.4rem 5rem;
+  border: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #159688;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.modal-tickets .modal-contents .modal-main .modal-buy-tickets:hover {
+  opacity: 0.8;
+}
+
+.modal-tickets .modal-contents .modal-main .modal-buy-tickets .check-icon {
+  margin-left: 0.2rem;
+}
+
+.modal-tickets .modal-contents .modal-main .modal-help {
+  text-align: right;
+  margin: 1.8rem 0;
+}
+
+.modal-tickets .modal-contents .modal-main .modal-help .modal-help-link {
+  padding: 1rem 0.2rem;
+}
+
+#footer .footer-inner {
+  background: #ffffff;
+  padding: 6.4rem 1.6rem;
+  color: #666666;
+}
+
+#footer .footer-inner .social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer .footer-inner .social-list .social-link {
+  color: #666666;
+  margin: 0 0.4rem;
+  padding: 0.8rem;
+}
+
+#footer .footer-inner .social-list .social-link:hover {
+  color: rgba(102, 102, 102, 0.6);
+}
+
+#footer .footer-inner .social-list .social-icons {
+  font-size: 3rem;
+}
+
+#footer .footer-inner .copyright {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+#footer .footer-inner .copyright .copyright-link {
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  color: #0d6efd;
+}
+
+#footer .footer-inner .copyright .copyright-link:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=styles.css.map */

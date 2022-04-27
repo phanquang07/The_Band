@@ -1,0 +1,432 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+// Header
+#header {
+  background: $black-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.6rem;
+    #navbar {
+      .nav-list {
+        display: flex;
+        background: $black-color;
+        .nav-item {
+          &:hover .nav-link {
+            color: $black-color;
+            background: $hover-color;
+          }
+          &:hover .more-nav-link {
+            color: $black-color;
+            background: $hover-color;
+          }
+          .nav-link,
+          .more-nav-link {
+            color: $white-color;
+            line-height: 4.6rem;
+            padding: 0 2.4rem;
+            text-transform: uppercase;
+          }
+        }
+        .more-nav-item {
+          position: relative;
+          &:hover .subnav-list {
+            display: block;
+          }
+          .subnav-list {
+            display: none;
+            position: absolute;
+            top: 4.6rem;
+            left: 0;
+            z-index: 1;
+            min-width: 16rem;
+            background: $white-color;
+            box-shadow: 0 0.4rem 1rem 0 rgba($color: #000000, $alpha: 0.3);
+            .subnav-link {
+              color: $black-color;
+              line-height: 3.85rem;
+              padding: 0 1.6rem;
+              background: $white-color;
+              &:hover {
+                background: $hover-color;
+              }
+            }
+          }
+        }
+      }
+      .nav-mobile-btn {
+        display: none;
+        color: $white-color;
+        line-height: 6.4rem;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .search {
+      .search-icons {
+        color: $white-color;
+        font-size: 1.4rem;
+        line-height: 4.6rem;
+        padding: 0 2.4rem;
+        &:hover {
+          background: $red-color;
+        }
+      }
+    }
+  }
+}
+
+// Slider
+#slider {
+  margin-top: 4.6rem;
+  .slider-inner {
+    .slide {
+      // height: 100vh;
+      position: relative;
+      .slider-img {
+        width: 100%;
+      }
+      .slider-text {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 11;
+        color: #fff;
+        text-align: center;
+        padding: 3.2rem 1.6rem;
+        .slider-heading {
+          font-size: 2.4rem;
+          font-weight: 400;
+          line-height: 3.6rem;
+        }
+        .slider-body {
+          margin-top: 1rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.about-heading {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 1rem !important;
+}
+
+.about-note {
+  font-style: italic;
+  color: $secondary-text-color;
+  text-align: center;
+  margin: 1.5rem 0 !important;
+}
+
+.about-band-item {
+  padding: 6.4rem 1.6rem;
+}
+// About Band
+#about-band {
+  background: $white-color;
+  .about-content {
+    text-align: justify;
+    margin-top: 1.5rem !important;
+  }
+  .about-member {
+    padding-top: 4.7rem;
+    padding-bottom: 3.2rem;
+    .member-info {
+      .member-name {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 400;
+      }
+      .member-img-wrap {
+        margin-top: 1.5rem;
+        .member-img {
+          width: 100%;
+          @include border-radius;
+        }
+      }
+    }
+  }
+}
+
+.tour-btn-sub {
+  color: $white-color;
+  background: $black-color;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  @include border-radius;
+  &:hover {
+    background: $hover-color;
+  }
+}
+// Tour
+#tour {
+  .tour-item {
+    background: $black-color;
+    .tour-heading {
+      color: $white-color;
+    }
+    .booking-schedule {
+      @include border-radius;
+      .booking-schedule-inner {
+        display: flex;
+        align-items: center;
+        background: $white-color;
+        border-top: 0.1rem solid $hover-color;
+        padding: 0.8rem 1.6rem;
+        .booking-date {
+          color: $secondary-text-color;
+        }
+        .ticket-status {
+          color: $white-color;
+          background: $red-color;
+          margin-left: 1.6rem;
+          padding: 0 0.8rem;
+          @include border-radius;
+        }
+        &:last-child {
+          justify-content: space-between;
+        }
+        &:last-child .ticket-status {
+          border-radius: 50%;
+          background: $black-color;
+          margin-right: 1.6rem;
+        }
+      }
+    }
+    .buy-ticket {
+      padding-top: 3.2rem;
+      padding-bottom: 4.8rem;
+      .ticket-item-inner {
+        @include border-radius;
+        background: $white-color;
+        .ticket-above {
+          background: $black-color;
+          .ticket-thumbnail {
+            width: 100%;
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+        }
+        .ticket-below {
+          padding: 1.6rem;
+          .ticket-heading {
+            font-size: 2rem;
+            font-weight: 500;
+          }
+          .ticket-booking {
+            margin: 1.5rem 0;
+            color: $secondary-text-color;
+          }
+          .ticket-description {
+            margin-bottom: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Contact
+.contact-icons {
+  margin-right: 1.8rem;
+}
+.contact-item {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  .contact-icons {
+    color: $gray-color;
+  }
+  .contact-link {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.contact-input {
+  padding: 0.8rem;
+  border: 0.1rem solid $hover-color;
+  width: 100%;
+  @include border-radius;
+}
+#contact {
+  background: $white-color;
+  .contact-content {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    .contact-form {
+      .contact-form-item {
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+      .btn-contact {
+        float: right;
+        margin: 1.6rem 0;
+      }
+    }
+  }
+}
+
+// Map
+#map {
+  .map-img {
+    width: 100%;
+  }
+}
+
+// Modal
+.modal-container {
+  width: 50rem;
+  max-width: calc(100% - 3.2rem);
+  margin: 0 auto;
+}
+.modal-tickets.open {
+  display: flex;
+}
+@keyframes modalFadeIn {
+  from {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-0%);
+    opacity: 1;
+  }
+}
+.modal-tickets {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  display: none;
+  align-items: center;
+  background: rgba($color: #000000, $alpha: 0.4);
+  .modal-contents {
+    position: relative;
+    background: $white-color;
+    @include border-radius;
+    animation: modalFadeIn linear 0.3s;
+    .modal-btn-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: none;
+      background: $green-color;
+      padding: 1.2rem 1.8rem;
+      color: $white-color;
+      &:hover {
+        background: $hover-color;
+      }
+    }
+    .modal-head {
+      padding: 4.8rem 1.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white-color;
+      background: $green-color;
+      .bag-icons {
+        font-size: 3rem;
+      }
+      .modal-heading {
+        font-size: 3rem;
+        letter-spacing: 0.2rem;
+        margin-left: 2rem;
+      }
+    }
+    .modal-main {
+      padding: 1.6rem;
+      .modal-label {
+        margin-bottom: 1rem;
+      }
+      .modal-input {
+        margin-bottom: 2rem;
+        width: 100%;
+        padding: 0.8rem;
+        border: 0.1rem solid $hover-color;
+        @include border-radius;
+      }
+      .modal-buy-tickets {
+        width: 100%;
+        padding: 1.4rem 5rem;
+        border: none;
+        text-transform: uppercase;
+        color: $white-color;
+        background: $green-color;
+        @include border-radius;
+        &:hover {
+          opacity: 0.8;
+        }
+        .check-icon {
+          margin-left: 0.2rem;
+        }
+      }
+      .modal-help {
+        text-align: right;
+        margin: 1.8rem 0;
+        .modal-help-link {
+          padding: 1rem 0.2rem;
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  .footer-inner {
+    background: $white-color;
+    padding: 6.4rem 1.6rem;
+    color: $gray-color;
+    .social-list {
+      display: flex;
+      justify-content: center;
+      .social-link {
+        color: $gray-color;
+        margin: 0 0.4rem;
+        padding: 0.8rem;
+        &:hover {
+          color: rgba($color: $gray-color, $alpha: 0.6);
+        }
+      }
+      .social-icons {
+        font-size: 3rem;
+      }
+    }
+    .copyright {
+      width: 100%;
+      text-align: center;
+      padding: 1.5rem 0;
+      .copyright-link {
+        display: inline-block;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        color: #0d6efd;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
