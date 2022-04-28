@@ -18,8 +18,8 @@
   }
   .modal-tickets {
     position: fixed;
-    top: 10%;
-    bottom: 10%;
+    top: 20%;
+    bottom: 20%;
   }
   .modal-tickets .modal-contents .modal-main .modal-input {
     font-size: 1.8rem;
