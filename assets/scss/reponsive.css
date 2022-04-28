@@ -13,6 +13,17 @@
   #tour .tour-item .buy-ticket .ticket-item:not(last-child) {
     margin-bottom: 2rem;
   }
+  .contact-input {
+    font-size: 1.8rem;
+  }
+  .modal-tickets {
+    position: fixed;
+    top: 10%;
+    bottom: 10%;
+  }
+  .modal-tickets .modal-contents .modal-main .modal-input {
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (max-width: 47.94rem) {
