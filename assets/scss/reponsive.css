@@ -16,12 +16,9 @@
   .contact-input {
     font-size: 1.8rem;
   }
-  .modal-tickets {
-    position: fixed;
-    top: 10%;
-    bottom: 10%;
-    left: 0;
-    right: 0;
+  .modal-tickets .modal-contents {
+    overflow: scroll;
+    top: 6.4rem;
   }
   .modal-tickets .modal-contents .modal-main .modal-input {
     font-size: 1.8rem;
