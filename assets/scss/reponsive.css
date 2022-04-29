@@ -115,13 +115,13 @@
     margin-top: 3rem;
   }
   .ticket-below .tour-btn-sub {
-    width: 40%;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 35.94rem) {
   .tour-btn-sub {
-    width: 50%;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=reponsive.css.map */
