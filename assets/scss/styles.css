@@ -43,6 +43,7 @@
   line-height: 4.6rem;
   padding: 0 2.4rem;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 #header .header-inner #navbar .nav-list .more-nav-item {
@@ -188,6 +189,7 @@
   color: #ffffff;
   background: #000000;
   padding: 0.8rem 1.6rem;
+  cursor: pointer;
   border: none;
   border-radius: 0.4rem;
   overflow: hidden;
@@ -413,6 +415,7 @@
   background: #159688;
   padding: 1.2rem 1.8rem;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .modal-tickets .modal-contents .modal-btn-close:hover {
@@ -478,6 +481,7 @@
   background: #159688;
   border-radius: 0.4rem;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .modal-tickets .modal-contents .modal-main .modal-buy-tickets:hover {
@@ -495,6 +499,7 @@
 
 .modal-tickets .modal-contents .modal-main .modal-help .modal-help-link {
   padding: 1rem 0.2rem;
+  cursor: pointer;
 }
 
 #footer .footer-inner {
