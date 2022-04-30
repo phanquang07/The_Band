@@ -170,13 +170,13 @@
 }
 
 #about-band .about-member .member-info .member-name {
-  font-size: 2rem;
   text-align: center;
   font-weight: 400;
 }
 
 #about-band .about-member .member-info .member-img-wrap {
   margin-top: 1.5rem;
+  padding: 0 3rem;
 }
 
 #about-band .about-member .member-info .member-img-wrap .member-img {
@@ -402,6 +402,7 @@
 .modal-tickets .modal-contents {
   position: relative;
   background: #ffffff;
+  overflow: auto;
   border-radius: 0.4rem;
   overflow: hidden;
   -webkit-animation: modalFadeIn linear 0.3s;
